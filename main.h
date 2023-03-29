@@ -3,7 +3,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdarg.h>
-
+#include <limits.h>
+#include <unistd.h>
 
 /**
  * struct format - Struct for format
@@ -13,12 +14,17 @@
 
 typedef struct specifiers
 {
-	char specifiers;
-	int (*f)(va_list);
+char *spcf;
+int (*f)(va_list);
 } specifiers_t;
+
+int _putcharf(char c);
+int _parseo(const char *format, specifiers_t f_list[], va_list arg_list);
 int _printf(const char *format, ...);
-//int get_function(char s, va_list args);
-int _putchar(char c);
-//int print_char(va_list args);
+int pChar(va_list);
+int pString(va_list);
+int pMod(va_list);
+int pIntDec(va_list);
+int pNumIntDec(va_list args);
 
 #endif
