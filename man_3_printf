@@ -1,0 +1,47 @@
+./" This is _printf manpag
+​
+.TH man 3 "30 March 2023" "1.0" "_printf man page"
+​
+.SH NAME
+​
+.B _printf
+- format and data.
+​
+.SH SYNOPSIS
+_printf FORMAT [ARGUMENT]...
+​
+.SH DESCRIPTION
+.B _printf()
+Prints to standard output the
+.B format
+string, interpreting
+.B ‘%’
+directives to format numeric and string arguments in a way that is mostly similar to the
+.B C ‘printf’ function.
+.SH The conversion specifiers
+.IP %%
+prints a single %
+.IP %c
+prints the next argument of type Char (int argument is converted to a character)
+.IP %s
+prints the next argument of type Char * // pointer to a string
+.IP %i OR %d
+prints the next argument of type int
+​
+.SH SEE ALSO
+​
+.I printf(1), printf(3).
+​
+.SH BUGS
+No known bugs.
+​
+.SH AUTHOR
+Briana Rivera & Julian Perez
+​
+.SH COPYRIGHT
+Copyright © 2022 Holberton School B.
+​
+Copyright © SS64.com 1999-2020.
+​
+Copyright Â© 2010 Free Software Foundation, Inc. License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>.
+Collapse
