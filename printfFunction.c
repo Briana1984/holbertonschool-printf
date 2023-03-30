@@ -12,7 +12,7 @@ int printCh;
 specifiers_t f_list[] = {
 {"c", pChar},
 {"s", pString},
-{"%", print_percent},
+{"%", pMod},
 {"d", print_decimal_integer},
 {"i", print_decimal_integer},
 {NULL, NULL}
