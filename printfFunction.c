@@ -11,7 +11,7 @@ int _printf(const char *format, ...)
 int printCh;
 specifiers_t f_list[] = {
 {"c", pChar},
-{"s", print_string},
+{"s", pString},
 {"%", print_percent},
 {"d", print_decimal_integer},
 {"i", print_decimal_integer},
