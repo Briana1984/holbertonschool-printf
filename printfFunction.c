@@ -11,10 +11,10 @@ int _printf(const char *format, ...)
 int printCh;
 specifiers_t f_list[] = {
 {"c", pChar},
-{"s", print_string},
-{"%", print_percent},
-{"d", print_decimal_integer},
-{"i", print_decimal_integer},
+{"s", pString},
+{"%", pMod},
+{"d", pIntDec},
+{"i", pIntDec},
 {NULL, NULL}
 };
 va_list arg_list;

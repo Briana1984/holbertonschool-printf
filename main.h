@@ -22,9 +22,9 @@ int _putcharf(char c);
 int parser(const char *format, specifiers_t f_list[], va_list arg_list);
 int _printf(const char *format, ...);
 int pChar(va_list);
-int print_string(va_list);
-int print_percent(va_list);
-int print_decimal_integer(va_list);
+int pString(va_list);
+int pMod(va_list);
+int pIntDec(va_list);
 int print_numberDI(va_list args);
 
 #endif
