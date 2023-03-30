@@ -13,13 +13,8 @@ specifiers_t f_list[] = {
 {"c", pChar},
 {"s", pString},
 {"%", pMod},
-<<<<<<< HEAD
 {"d", pIntDec},
 {"i", pIntDec},
-=======
-{"d", print_decimal_integer},
-{"i", print_decimal_integer},
->>>>>>> 1beeeef36f49942710dcdaed08b81cd08494fccc
 {NULL, NULL}
 };
 va_list arg_list;

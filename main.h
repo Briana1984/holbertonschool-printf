@@ -24,11 +24,7 @@ int _printf(const char *format, ...);
 int pChar(va_list);
 int pString(va_list);
 int pMod(va_list);
-<<<<<<< HEAD
 int pIntDec(va_list);
-=======
-int print_decimal_integer(va_list);
->>>>>>> 1beeeef36f49942710dcdaed08b81cd08494fccc
-int print_numberDI(va_list args);
+int pnumIndDec(va_list args);
 
 #endif

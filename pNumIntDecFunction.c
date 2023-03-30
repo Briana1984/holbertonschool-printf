@@ -1,12 +1,12 @@
 #include "main.h"
 /**
- * print_numberDI - print integer and decimal
+ * pnumIndDec - print integer and decimal
  * @args: parameter
  *
  *
  * Return: 0
  */
-int print_numberDI(va_list args)
+int pnumIndDec(va_list args)
 {
 int n;
 int tam;
