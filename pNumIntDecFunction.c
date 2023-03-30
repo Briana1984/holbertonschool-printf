@@ -1,17 +1,12 @@
-#include <limits.h>
-#include <stdio.h>
-#include <unistd.h>
-#include <stdarg.h>
-#include <stdlib.h>
 #include "main.h"
 /**
- * pNumIntDec - print integer and decimal
+ * print_numberDI - print integer and decimal
  * @args: parameter
  *
  *
  * Return: 0
  */
-int pNumIntDec(va_list args)
+int print_numberDI(va_list args)
 {
 int n;
 int tam;

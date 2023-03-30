@@ -1,8 +1,4 @@
-#include <limits.h>
-#include <stdio.h>
-#include <unistd.h>
-#include <stdarg.h>
-#include <stdlib.h>
+#include "main.h"
 /**
  * _printf - program print to print
  * @format: parameter
@@ -15,17 +11,17 @@ int _printf(const char *format, ...)
 int printCh;
 specifiers_t f_list[] = {
 {"c", pChar},
-{"s", pString},
-{"%", pMod},
-{"d", pIntDec},
-{"i", pIntDec},
+{"s", print_string},
+{"%", print_percent},
+{"d", print_decimal_integer},
+{"i", print_decimal_integer},
 {NULL, NULL}
 };
 va_list arg_list;
 if (format == NULL)
 return (-1);
 va_start(arg_list, format);
-printCh = _parseo(format, f_list, arg_list);
+printCh = parser(format, f_list, arg_list);
 va_end(arg_list);
 return (printCh);
 }

@@ -1,15 +1,10 @@
-#include <limits.h>
-#include <stdio.h>
-#include <unistd.h>
-#include <stdarg.h>
-#include <stdlib.h>
 #include "main.h"
 /**
- * pString - Prints a string
+ * print_string - Prints a string
  * @list: list of arguments
  * Return: Will return the amount of characters printed.
  */
-int pString(va_list list)
+int print_string(va_list list)
 {
 int i;
 char *string;
