@@ -12,9 +12,19 @@ Tests done in Ubuntu 20.04  on [SSH](ssh 74384dff64aa@74384dff64aa.af625aa7.hbtn
 ## Repository Breakdown
 Once cloned over, the repository will contain the following files:
 ​
-|   **File**    |  **Decription**                       |
-|---------------|---------------------------------------|
-|      main.h   | header file with prototypes           |
+|   **File**          |  **Decription**                       |
+|---------------------|---------------------------------------|
+|  main.h             | header file with prototypes           |
+|  README.md          | Be read.                              |
+| printfFunction.c    | principal function                    |
+| main.c              | program execution.                    |
+| pStringFunction.c   |                                       |
+| pNumIntDecFunction.c|                                       |
+| pModFunction.c      |                                       |
+| pIntDecFunction.c   |                                       |
+| pCharFunction.c     |                                       |
+| _parseoFunction.c   |                                       |
+| _putcharfFunction.c |                                       |   
 ​
 ​
 ​
@@ -26,6 +36,7 @@ Format tags implemented in _printf
 | c             | characters                            |
 | s             | string of characters                  |
 | d or i        | int to signed decimal                 |
+| %             | percentage                            |
 ​
 ## How to Use
 There are two ways to use the _printf function in your code.
