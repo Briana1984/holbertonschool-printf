@@ -1,0 +1,27 @@
+./" This is _printf manpag
+<200b>
+.TH man 3 "30 March 2023" "1.0" "_printf man page"
+<200b>
+.SH NAME
+<200b>
+.B _printf
+- format and data.
+<200b>
+.SH SYNOPSIS
+_printf FORMAT [ARGUMENT]...
+<200b>
+.SH DESCRIPTION
+.B _printf()
+Prints to standard output the
+.B format
+string, interpreting
+.B ‘%’
+directives to format numeric and string arguments in a way that is mostly similar to the
+.B C ‘printf’ function.
+.SH The conversion specifiers
+.IP %%
+prints a single %
+.IP %c
+prints the next argument of type Char (int argument is converted to a character)
+.IP %s
+@@@ 
